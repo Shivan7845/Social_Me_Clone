@@ -1,0 +1,778 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+.main{
+    width: 100%;
+    height: 100%;
+}
+.page1{
+    width: 100%;
+    height: 100vh;
+    padding: 1vmax 3vmax;
+    background-image: url("https://images.squarespace-cdn.com/content/v1/6002b9acdfad4a36491ad21a/22f8b0e2-ac9f-4644-8a57-865c1b0b3ffb/Social+Me+Banner+1.png?format=2500w");
+    background-position: center;
+    background-size: cover;
+    background-color:#FBF7F4;
+}
+.nav{
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav h1{
+    font: 400 2.5vmax "belleza";
+    letter-spacing: 4px;
+    
+}
+.nav h5{
+    display: none;
+}
+
+.nav-part2{
+    display: flex;
+    gap: 30px;
+    font: 100 1vmax "lato light";
+}
+.nav-part3 i{
+    font-size: 1.5vmax;
+    margin-right: 1vmax;
+}
+.nav-part3 button{
+    padding: 1vmax 2vmax;
+    font: 400 1vmax "lato";
+    border: none;
+    background-color:#282D27;
+    color: white;
+}
+.nav-part3 #menu {
+    display: none;
+}
+/* ===================================================== */
+.p1-center{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    /* background-color: red; */
+}
+.p1c-left{
+    width: 65%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 5vmax;
+    align-items: end;
+}
+.p1c-left h1{
+    font: 400 4vmax "lato";
+    text-align: end;
+}
+.p1c-left p{
+    font: 100 1.3vmax "lato";
+    width: 60%;
+    margin: 2vmax 0;
+    line-height: 2vmax;
+    text-align: end;
+
+}
+.p1c-left button{
+    font: 400 1vmax "lato";
+    border: none;
+    background-color: #282D27;
+    color: white;
+    padding: 1vmax 2vmax;
+}
+
+.p1c-right{
+    width: 35%;
+    height: 100%;
+}
+.p1c-right img{
+    width:410px;
+    height: 620px;
+    border-top-left-radius: 200px;
+    border-top-right-radius: 200px;
+
+}
+/* ==================================================== */
+
+.page2{
+    width: 100%;
+    height: 60vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F5DFD3;
+}
+.content{
+    margin-left: 10vmax;
+}
+.page2 h1{
+    font: 500 2.5vmax "belleza";
+}
+.page2 p{
+    font: 500 2vmax "belleza";
+    width: 60%;
+    line-height: 3vmax;
+    margin-top: 2vmax;
+}
+
+.page2 img{
+    height: 50vh;
+    position: absolute;
+    right: 0;
+}
+/* ================================================== */
+
+.page3{
+    width: 100%;
+    height: 100vh;
+    background-color: #FAF7F4;
+    position: relative;
+}
+.page3 img{
+    height: 80vh;
+    position: absolute;
+    top: 15%;
+    display: flex;
+}
+.p3-top{
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+.p3-top h1{
+    text-align: center;
+    font: 400 3vmax "belleza";
+}
+.p3-bottom{
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    padding: 2vmax 0;
+    /* background-color: red; */
+    justify-content: space-around;
+}
+.img{
+    width: 25%;
+    height: 72vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 250px;
+    border-top-right-radius: 250px;
+}
+.img:nth-child(1){
+    transform: translateX(100px);
+    background-image: url(https://images.squarespace-cdn.com/content/v1/6002b9acdfad4a36491ad21a/1611418754325-2PWT3J1WWZHRS675G38K/georgia-de-lotz-CiSizRTO8U8-unsplash.jpg?format=750w);
+    background-position: center;
+    background-size: cover;
+}
+.img:nth-child(2){
+    
+    background-position: center;
+    background-size: cover;
+    background-image: url(https://images.squarespace-cdn.com/content/v1/6002b9acdfad4a36491ad21a/1611418833210-7AE87J0M6VUXWAWEZTTM/aleksander-vlad-jiVeo0i1EB4-unsplash.jpg?format=750w);
+
+}
+.img:nth-child(3){
+    transform: translateX(-100px);
+    background-position: center;
+    background-size: cover;
+    background-image: url(https://images.squarespace-cdn.com/content/v1/6002b9acdfad4a36491ad21a/1611418896390-B476ATWHNK25C2W1RMS8/fotografierende-P_DOaAvz3JE-unsplash.jpg?format=750w);
+
+}
+#scale{
+    padding: 1.2vmax 2.5vmax;
+    border: none;
+    background-color: #282D27;
+    font: 400 1vmax "lato";
+    color: white;
+    transition: all linear 0.5s;
+}
+#scale:hover{
+    scale: 0.9;
+}
+/* =============================================== */
+.page4{
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #F5DFD3;
+}
+.page4 h1{
+    font: 400 3vmax "belleza";
+}
+.p4-img img{
+    height: 7vmax;
+}
+/* =================================================== */
+.page5{
+    width: 100%;
+    height: 95vh;
+    display: flex;
+    background-color: #FAF7F4;
+}
+.p5-left{
+    width: 45%;
+    height: 100%;
+    position: relative;
+    /* background-color: red; */
+}
+#p5l-img1{
+    height: 42vh;
+    position: absolute;
+    top: 13%;
+    left: 25%;
+    
+}
+#p5l-img2{
+    height: 60vh;
+    position: absolute;
+    top: 18%;
+    right: 0;    
+}
+
+.p5-right{
+    width: 50%;
+    height: 100%;
+    padding: 5vmax 3vmax;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: start;
+    position: relative;
+}
+.p5-right h1{
+    font: 400 3.1vmax "belleza";
+}
+.p5-right p{
+    font: 100 1.3vmax "lato";
+    line-height: 2vmax;
+    width: 85%;
+}
+.p5-right img{
+    height: 35vh;
+    position: absolute;
+    bottom: 0;
+    right: 0%;
+}
+/* =============================================== */
+.page6{
+    width: 100%;
+    height: 50vh;
+    background-color: #282D27;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.page6 h2{
+    font: 400 1.6vmax "belleza";
+    line-height: 2vmax;
+    width: 70%;
+    margin-bottom: 2vmax;
+    text-align: center;
+}
+.page6 h3{
+    font: 100 1.1vmax "lato";
+}
+/* =================================================== */
+.page7{
+    width: 100%;
+    height: 90vh;
+    position: relative;
+    background-color: #FAF7F4;
+}
+.page7 >img{
+    height: 35vh;
+    position: absolute;
+}
+.p7-top{
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+.p7-top h1{
+    font: 400 2.8vmax "belleza";
+}
+.p7-bottom{
+    width: 100%;
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.p7-bottom img:nth-child(1){
+    height: 55vh;
+    width: 25%;
+    object-fit: cover;
+    z-index: 99;
+}
+.p7-bottom img:nth-child(2){
+    height: 55vh;
+    width: 25%;
+    margin: 0 2vmax;
+    object-fit: cover;
+}.p7-bottom img:nth-child(3){
+    height: 55vh;
+    width: 25%;
+    object-fit: cover;
+}
+/* ======================================== */
+
+.page8{
+    width: 100%;
+    height: 65vh;
+    display: flex;
+    background-color: #F5DFD3;
+}
+.p8-left{
+    width: 55%;
+    height: 100%;
+    display: flex;
+    padding-left: 12vmax;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    position: relative;
+}
+
+.p8-left h1{
+    font: 300 2.5vmax "belleza";
+}
+.p8-left h2{
+    font: 100 1.4vmax "lato";
+    line-height: 2vmax;
+    margin: 2vmax 0;
+    z-index: 99;
+}
+.p8-left input{
+    border: none;
+    margin-right: 0.5vmax;
+    padding: 1.2vmax 4vmax 1.2vmax 1.5vmax;
+    font: 100 1.2vmax "lato";
+    z-index: 99;
+}
+.p8-right{
+    width: 45%;
+    height: 100%;
+    display: flex;
+    position: relative;
+}
+#p8l-img{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 40vh;
+
+}
+#p8r-img1{
+    position: absolute;
+    top: 5%;
+    left: 25%;
+    height: 40vh;
+}
+#p8r-img2{
+    height: 55vh;
+    top: 10%;
+    position: absolute;
+}
+
+/* ========================================= */
+
+.page9{
+    width: 100%;
+    height: 80vh;
+    padding: 2vmax 10vmax;
+    background-color: #FAF7F4;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.p9-top{
+    width: 100%;
+    height: 25vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: red; */
+}
+.p9-top h1{
+    font: 300 2.5vmax "belleza";
+}
+.p9-top ul{
+    display: flex;
+    gap: 30px;
+}
+.p9-top li{
+    list-style: none;
+    text-decoration: underline;
+    font: 100 1.5vmax "lato";
+    margin-top: 2vmax;
+}
+.p9-middle{
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+
+    justify-content: space-between;
+    align-items: center;
+}
+.p9b{
+    width: 15%;
+    height: 25vh;
+    display: flex;
+}
+.p9b>h2{
+    font: 100 1.8vmax "belleza";
+    text-align: center;
+}
+.p9b img{
+    object-fit: cover;
+}
+.p9-bottom{
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.p9-bottom h3{
+    font: 100 1.2vmax "lato";
+}
+.icon{
+    font-size: 1.5vmax;
+}
+
+.p9b-li ul{
+    display: flex;
+    gap: 5px;
+}
+.p9b-li li{
+    font: 100 1.2vmax "lato";
+    list-style: none;
+    text-decoration:1px solid underline;
+}
+/* ================================================ */
+
+@media(max-width:600px){
+
+    .main{
+        /* overflow-x: hidden; */
+        /* padding:0 3vmax; */
+    }
+    .nav-part2{
+        display: none;
+    }
+    .nav-part3{
+        display: none;
+    }
+    .nav h1{
+        font-size: 3.5vmax;
+        letter-spacing: 2px;
+    }
+    .nav h5{
+        display: initial;
+        font-size: 3.5vmax;
+    }
+    /* ================================== */
+
+    .p1-center{
+        flex-direction: column;
+
+    }
+    .p1c-left{
+        width: 100%;
+        height: 50vh;
+        margin-right: 0;
+        /* background-color: red; */
+    }
+    .p1c-left h1{
+     font-size: 4.5vmax;
+     text-align:end;
+    }
+    .p1c-left p{
+        font-size: 2.5vmax;
+        line-height: 3vmax;
+        width: 90%;
+        text-align: end;
+    }
+    .p1c-left button{
+        font-size: 1.5vmax;
+        margin-bottom: 2vmax;
+    }
+    .p1c-right{
+        width: 100%;
+    }
+    .p1c-right img{
+        width: 100%;
+        height: 50vh;
+        border-top-left-radius: 200px;
+        border-top-right-radius: 200px;
+    }
+    /* ============================================ */
+
+    .page2{
+        width: 89%;
+        height: 30vh;
+        margin: 3vmax;
+    }
+    .content{
+        margin-left: 5vmax;
+    }
+    .page2 h1{
+        font-size: 3.5vmax;
+    }
+    .page2 p{
+        font-size: 2.4vmax;
+        width: 90%;
+    }
+    .page2 img{
+        display: none;
+    }
+    /* ========================================= */
+
+    .page3 img{
+        display: none;
+    }
+    .p3-top{
+        height: 15vh;
+    }
+    .p3-top h1{
+        font-size: 4vmax;
+    }
+    .p3-bottom{
+        flex-direction: column;
+        height: 120vh;
+        align-items: center;
+        width: 100%;
+    }
+    .img{
+        width:80%;
+        border-top-left-radius: 250px;
+        border-top-right-radius: 250px;
+        margin-bottom: 2vmax;
+    }
+    .img:nth-child(1){
+        transform: translateX(0);
+    }
+    .img:nth-child(3){
+        transform: translateX(0);
+    }
+    #scale{
+        font-size: 2vmax;
+    }
+    /* ========================================== */
+
+    .page4{
+        width: 100%;
+        height: 80vh;
+        margin-top: 35vh;
+       justify-content: space-around;
+       align-items: center;
+    }
+    .page4 h1{
+        font-size: 5vmax;
+        
+    }
+    .p4-img img{
+        height: 10vh;
+        display: flex;  
+        margin: 2vmax;
+        flex-direction: column;
+    }
+    /* ========================================== */
+    .page5{
+        height: 120vh;
+        flex-direction:column;
+        /* margin-bottom: 10vh; */
+    }
+    .p5-left{
+        width: 100%;
+    }
+    #p5l-img1{
+        display: none;
+    }
+    #p5l-img2{
+        top: 2%;
+    }
+
+    .p5-right{
+        width: 100%;
+        padding:5vmax;
+    }
+    .p5-right h1{
+        margin-top: 10vmax;
+        font-size: 3.5vmax;
+        text-align: center;
+    }
+    .p5-right p{
+        font-size: 2.5vmax;
+        width: 95%;
+        line-height: 3vmax;
+        margin: 2vmax;
+    }
+    .p5-right img{
+        display: none;
+    }
+    /* ======================================== */
+
+    .page6{
+        height: 30vh;
+    }
+    .page6 h2{
+        font-size: 2.2vmax;
+        width: 90%;
+        line-height: 3vmax;
+    }
+    .page6 h3{
+        font-size: 2vmax;
+    }
+    /* ========================================= */
+    .page7 >img{
+        display: none;
+    }
+    .page7{
+        height: 135vh;
+        margin-top: 40vh;
+
+    }
+    .p7-top{
+        height: 10vh;
+    }
+    .p7-top h1{
+        font-size: 4vmax;
+        margin: 2vmax;
+    }
+    .p7-bottom {
+        flex-direction: column;
+    }
+    .p7-bottom img:nth-child(1){
+        width: 90%;
+        margin: 2%;
+    }
+    .p7-bottom img:nth-child(2){
+        width: 90%;
+        margin: 2%;
+    }.p7-bottom img:nth-child(3){
+        width: 90%;
+        margin: 2%;
+    }
+    /* ================================================ */
+
+    .page8{
+        flex-direction: column;
+        height: 90vh;
+        /* margin: 3vmax; */
+        overflow-x: hidden;
+    }
+    .p8-left{
+        width: 100%;
+        height: 50vh;
+        padding-left: 5vmax;
+    }
+    .p8-left h1{
+        font-size: 3.5vmax;
+        
+    }
+    .p8-left h2{
+        font-size: 2.4vmax;
+        line-height: 3.5vmax;
+        width: 70%;
+        font-weight: 300;
+    }
+    .p8-left input{
+        font-size: 2vmax;
+    }
+    .p8-right{
+        width: 100%;
+        align-items: center;
+    }
+    #p8l-img{
+        display: none;
+    }
+    #p8r-img1{
+        display: none;
+    }
+    #p8r-img2{
+        top: 0;
+    }
+    /* =================================================== */
+
+    .page9{
+        width: 100%;
+        flex-direction: column;
+        padding: 2vmax;
+    }
+    .p9-top{
+        height: 5vh;
+    }
+    .p9-top h1{
+        font-size: 3.5vmax;
+    }
+    .p9-top ul{
+        gap: 10px;
+    }
+    .p9-top li{
+        font-size: 2.2vmax;
+        font-weight: 600;
+    }
+    .p9-middle{
+        height: 180vh;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+    .p9b{
+        width: 100%;
+        height: 30vh;
+        margin: 2vmax;
+    }
+    .p9b img{
+        
+        width: 100%;
+        height: 30vh;
+    }
+    .p9b>h2{
+        display: none;
+    }
+    /* ====================================== */
+    .p9-bottom{
+        flex-direction: column;
+        margin-top: 2vh;
+    }
+    .p9-bottom h3{
+        font-size: 2.5vmax;
+        text-align: center;
+    }
+    .p9b-li li{
+        font-size: 2vmax;
+    }
+    .icon{
+        font-size: 3vmax;
+        margin: 2vmax;
+    }
+
+}
+
