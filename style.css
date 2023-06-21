@@ -73,6 +73,7 @@ html,body{
 }
 .p1c-left h1{
     font: 400 4vmax "lato";
+    width: 80%;
     text-align: end;
 }
 .p1c-left p{
